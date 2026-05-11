@@ -40,7 +40,10 @@ nav.scrolled{background:rgba(249,247,244,0.93);backdrop-filter:blur(16px);border
 .nav-cv::after{display:none !important}
 
 .hero{min-height:100vh;display:grid;grid-template-rows:1fr auto;padding:0 5vw}
-.hero-inner{display:flex;flex-direction:column;justify-content:center;padding-top:7rem}
+.hero-inner{display:grid;grid-template-columns:1fr 1fr;align-items:center;padding-top:7rem;gap:4rem}
+.hero-text{display:flex;flex-direction:column}
+.hero-photo{display:flex;justify-content:flex-end;align-items:flex-end}
+.hero-photo img{width:100%;max-width:420px;object-fit:cover;filter:grayscale(8%)}
 .hero-label{font-family:'DM Mono',monospace;font-size:0.63rem;letter-spacing:0.18em;text-transform:uppercase;color:var(--muted);margin-bottom:2rem;opacity:0;animation:up 0.7s forwards 0.2s}
 .hero-name{font-family:'DM Serif Display',serif;font-size:clamp(2rem,5vw,5rem);line-height:0.95;letter-spacing:-0.02em;color:var(--text);opacity:0;animation:up 0.8s forwards 0.4s}
 .hero-name em{font-style:italic;color:var(--muted)}
@@ -168,12 +171,15 @@ footer p,footer span{font-family:'DM Mono',monospace;font-size:0.6rem;letter-spa
 
 <!-- HERO -->
 <section class="hero">
-  <div class="hero-inner">
-    <div class="hero-label">Economics &amp; Finance — Pontianak, Indonesia</div>
-    <h1 class="hero-name">I read markets<br>the way others<br>read <em>people.</em></h1>
+<div class="hero-inner">
+    <div class="hero-text">
+      <div class="hero-label">Economics &amp; Finance — Pontianak, Indonesia</div>
+      <h1 class="hero-name">I read markets<br>the way others<br>read <em>people.</em></h1>
+    </div>
+    <div class="hero-photo">
+      <img src="Profile_Pro.jpg" alt="Septarius Pius">
+    </div>
   </div>
-  <div class="hero-foot">
-    <p class="hero-desc">
       <strong>Septarius Pius</strong> — Bakti BCA Scholarship Ambassador &amp; Economics Development student at Tanjungpura University, focused on financial analysis and data-driven economic insight.
     </p>
     <div class="hero-actions">
