@@ -88,14 +88,16 @@ nav.scrolled{background:rgba(249,247,244,0.93);backdrop-filter:blur(16px);border
 
 /* EXPERIENCE */
 .exp-section{background:var(--surface)}
-.exp-item{display:grid;grid-template-columns:150px 1fr;gap:2.5rem;padding:2.2rem 0;border-bottom:1px solid var(--border)}
-.exp-item:first-child{border-top:1px solid var(--border)}
-.exp-period{font-family:'DM Mono',monospace;font-size:0.6rem;letter-spacing:0.05em;color:var(--muted);padding-top:0.15rem}
-.exp-org{font-family:'DM Mono',monospace;font-size:0.6rem;letter-spacing:0.1em;text-transform:uppercase;color:var(--muted);margin-bottom:0.35rem}
-.exp-role{font-family:'DM Serif Display',serif;font-size:1.1rem;color:var(--text);margin-bottom:0.55rem;line-height:1.3}
-.exp-desc{font-size:0.8rem;color:var(--muted);line-height:1.75;font-weight:300}
-.etags{display:flex;flex-wrap:wrap;gap:0.32rem;margin-top:0.7rem}
-.etag{font-family:'DM Mono',monospace;font-size:0.54rem;letter-spacing:0.07em;text-transform:uppercase;padding:0.18rem 0.48rem;border:1px solid var(--border);color:var(--dim);border-radius:2px}
+.exp-layout{display:grid;grid-template-columns:1fr 1fr;gap:6rem;align-items:start}
+.exp-col-title{font-family:'DM Mono',monospace;font-size:0.6rem;letter-spacing:0.18em;text-transform:uppercase;color:var(--muted);margin-bottom:2rem;padding-bottom:0.8rem;border-bottom:1px solid var(--border)}
+.edu-school{font-family:'DM Serif Display',serif;font-size:1.3rem;color:var(--text);margin-bottom:0.3rem}
+.edu-degree{font-size:0.82rem;color:var(--muted);font-weight:300;margin-bottom:0.2rem}
+.edu-period{font-family:'DM Mono',monospace;font-size:0.6rem;letter-spacing:0.06em;color:var(--dim)}
+.exp-list-item{padding:0.9rem 0;border-bottom:1px solid var(--border)}
+.exp-list-item:first-child{border-top:1px solid var(--border)}
+.exp-list-role{font-size:0.88rem;color:var(--text);font-weight:400;margin-bottom:0.2rem}
+.exp-list-org{font-family:'DM Mono',monospace;font-size:0.6rem;letter-spacing:0.05em;color:var(--muted)}
+.exp-list-period{font-family:'DM Mono',monospace;font-size:0.58rem;letter-spacing:0.06em;color:var(--dim);margin-top:0.15rem}
 
 /* PROJECTS */
 .proj-grid{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--border);border:1px solid var(--border)}
@@ -265,67 +267,47 @@ footer p,footer span{font-family:'DM Mono',monospace;font-size:0.6rem;letter-spa
     <div class="eyebrow">02 — Experience</div>
     <h2 class="sec-title">Where learning<br>meets <em>action.</em></h2>
   </div>
-
-  <div class="exp-item sr">
-    <div class="exp-period">Nov 2025 — Present</div>
+  <div class="exp-layout sr">
     <div>
-      <div class="exp-org">PT Bank Central Asia Tbk (BCA)</div>
-      <div class="exp-role">Bakti BCA Scholarship Ambassador</div>
-      <p class="exp-desc">Selected as 1 of 47 ambassadors from 700+ nationwide awardees, representing Universitas Tanjungpura. Championing BCA's programs in education, environmental sustainability, and community empowerment across West Kalimantan.</p>
-      <div class="etags"><span class="etag">Leadership</span><span class="etag">Public Relations</span><span class="etag">Community</span></div>
+      <div class="exp-col-title">Education</div>
+      <div class="edu-school">Universitas Tanjungpura</div>
+      <div class="edu-degree">S.E. in Economics Development</div>
+      <div class="edu-period">2023 — Present · Pontianak, Indonesia</div>
+    </div>
+    <div>
+      <div class="exp-col-title">Experience</div>
+      <div class="exp-list-item">
+        <div class="exp-list-role">Bakti BCA Scholarship Ambassador</div>
+        <div class="exp-list-org">PT Bank Central Asia Tbk (BCA)</div>
+        <div class="exp-list-period">Nov 2025 — Present</div>
+      </div>
+      <div class="exp-list-item">
+        <div class="exp-list-role">Financial Market Analyst — Internship</div>
+        <div class="exp-list-org">VINIX7</div>
+        <div class="exp-list-period">Feb 2026 — Present</div>
+      </div>
+      <div class="exp-list-item">
+        <div class="exp-list-role">Team Leader — Community Empowerment</div>
+        <div class="exp-list-org">PT Bank Central Asia Tbk (BCA)</div>
+        <div class="exp-list-period">Jan 2025 — Dec 2025</div>
+      </div>
+      <div class="exp-list-item">
+        <div class="exp-list-role">Group Facilitator — Internship</div>
+        <div class="exp-list-org">Merry Riana Positive Psychology</div>
+        <div class="exp-list-period">Jan 2026 — Present</div>
+      </div>
+      <div class="exp-list-item">
+        <div class="exp-list-role">Laboratory Assistant — Econometrics</div>
+        <div class="exp-list-org">Universitas Tanjungpura</div>
+        <div class="exp-list-period">Aug 2025 — Present</div>
+      </div>
+      <div class="exp-list-item">
+        <div class="exp-list-role">Head of Studies and Strategy Division</div>
+        <div class="exp-list-org">Himepa Untan</div>
+        <div class="exp-list-period">Sep 2025 — Present</div>
+      </div>
     </div>
   </div>
-
-  <div class="exp-item sr">
-    <div class="exp-period">Feb 2026 — Present</div>
-    <div>
-      <div class="exp-org">VINIX7</div>
-      <div class="exp-role">Financial Market Analyst — Internship</div>
-      <p class="exp-desc">Conducted financial market and equity analysis using fundamental and technical approaches, including financial statements and macroeconomic indicators. Generated data-driven insights to support investment decision-making processes.</p>
-      <div class="etags"><span class="etag">Equity Analysis</span><span class="etag">Fundamental</span><span class="etag">Technical Analysis</span></div>
-    </div>
-  </div>
-
-  <div class="exp-item sr">
-    <div class="exp-period">Jan 2025 — Dec 2025</div>
-    <div>
-      <div class="exp-org">PT Bank Central Asia Tbk (BCA)</div>
-      <div class="exp-role">Team Leader — Community Empowerment Bakti BCA</div>
-      <p class="exp-desc">Led a community empowerment project in Sungai Lemak to strengthen the local creative economy through cultural preservation and resource-based innovation. Managed a team of 10 members to deliver measurable community impact.</p>
-      <div class="etags"><span class="etag">Team Leadership</span><span class="etag">Community Dev</span><span class="etag">Project Management</span></div>
-    </div>
-  </div>
-
-  <div class="exp-item sr">
-    <div class="exp-period">Jan 2026 — Present</div>
-    <div>
-      <div class="exp-org">Merry Riana Positive Psychology</div>
-      <div class="exp-role">Group Facilitator — Internship</div>
-      <p class="exp-desc">Mentored and supported a group of 9 Bakti Champions through structured discussions and personal development sessions, fostering growth mindset and resilience in a positive psychology framework.</p>
-      <div class="etags"><span class="etag">Facilitation</span><span class="etag">Mentoring</span><span class="etag">Problem Solving</span></div>
-    </div>
-  </div>
-
-  <div class="exp-item sr">
-    <div class="exp-period">Aug 2025 — Present</div>
-    <div>
-      <div class="exp-org">Universitas Tanjungpura</div>
-      <div class="exp-role">Laboratory Assistant — Econometrics</div>
-      <p class="exp-desc">Supporting the Advanced Econometrics course by assisting students in applying econometric analysis using Gretl, Stata, and RStudio. Providing guidance on model specification, interpretation, and empirical research methods.</p>
-      <div class="etags"><span class="etag">Econometrics</span><span class="etag">Gretl</span><span class="etag">Stata</span><span class="etag">RStudio</span></div>
-    </div>
-  </div>
-
-  <div class="exp-item sr">
-    <div class="exp-period">Sep 2025 — Present</div>
-    <div>
-      <div class="exp-org">Himepa Untan</div>
-      <div class="exp-role">Head of Studies and Strategy Division</div>
-      <p class="exp-desc">Spearheading the division's strategic direction in research and knowledge development. Leading cross-team initiatives and overseeing high-impact academic programs that elevate the organization's intellectual contributions.</p>
-      <div class="etags"><span class="etag">Strategy</span><span class="etag">Research</span><span class="etag">Leadership</span></div>
-    </div>
-  </div>
-
 </section>
 
 <!-- PROJECTS -->
